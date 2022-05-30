@@ -1,0 +1,101 @@
+@keyframes moveCircle {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    left: 52%;
+    transform: translate(-50%, -400%);
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes shakeCircle {
+  25% {
+    transform: translate(-50%, 200%);
+  }
+
+  50% {
+    transform: translate(-50%, -400%);
+  }
+
+  80% {
+    opacity: 1;
+    z-index: -1000;
+  }
+
+  81% {
+    transform: translate(-50%, 0%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes eat {
+  0% {
+    clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+  }
+  25% {
+    clip-path: polygon(100% 60%, 44% 48%, 100% 40%);
+  }
+  50% {
+    clip-path: polygon(100% 50%, 44% 48%, 100% 50%);
+  }
+  75% {
+    clip-path: polygon(100% 59%, 44% 48%, 100% 35%);
+  }
+  100% {
+    clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+  }
+}
+
+@keyframes hideIntro {
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes openWindow {
+  0% {
+    clip-path: circle(0%);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    clip-path: circle(110%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    clip-path: circle(110%);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  99% {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    clip-path: circle(0%);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes moveDots {
+  to {
+    background-position: 0px center;
+  }
+}

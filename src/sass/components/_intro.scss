@@ -1,0 +1,77 @@
+@use '../abstracts/' as *;
+@use '../base/animations';
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 100vh;
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
+
+  & > * {
+    text-transform: uppercase;
+  }
+
+  .heading-primary {
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+
+  .choices {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    width: 50%;
+  }
+}
+
+#showpacman:checked ~ .intro > h1,
+#showpacman:checked ~ .intro > .choices > .choice:not(.showpacman) {
+  animation: hideIntro 0.4s forwards;
+}
+#showmario:checked ~ .intro > h1,
+#showmario:checked ~ .intro > .choices > .choice:not(.showmario) {
+  animation: hideIntro 0.4s forwards;
+}
+#showduck:checked ~ .intro > h1,
+#showduck:checked ~ .intro > .choices > .choice:not(.showduck) {
+  animation: hideIntro 0.4s forwards;
+}
+
+#showduck:checked ~ .container--duck {
+  animation: openWindow 1.5s 1.6s forwards;
+}
+#showmario:checked ~ .container--mario {
+  animation: openWindow 1.5s 1.6s forwards;
+}
+#showpacman:checked ~ .container--pacman {
+  animation: openWindow 1.5s 1.6s forwards;
+}
+
+#showduck:checked ~ .intro > .choices > .choice.duck {
+  clip-path: circle(15%);
+  background-color: #fff79c;
+  color: #fff79c;
+  animation: moveCircle 1s 0.4s forwards, shakeCircle 1s 1s forwards;
+}
+#showmario:checked ~ .intro > .choices > .choice.mario {
+  clip-path: circle(15%);
+  background-color: #a97ae3;
+  color: #a97ae3;
+  animation: moveCircle 1s 0.4s forwards, shakeCircle 1s 1s forwards;
+}
+#showpacman:checked ~ .intro > .choices > .choice.pacman {
+  clip-path: circle(15%);
+  background-color: #5adbfb;
+  color: #5adbfb;
+  animation: moveCircle 1s 0.4s forwards, shakeCircle 1s 1s forwards;
+}

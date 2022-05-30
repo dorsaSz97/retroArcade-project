@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Retro Arcade</title>
+  </head>
+
+  <body>
+    <input type="checkbox" id="showpacman" />
+    <input type="checkbox" id="showmario" />
+    <input type="checkbox" id="showduck" />
+
+    <div class="intro">
+      <h1 class="heading-primary">Choose your game:</h1>
+
+      <div class="choices">
+        <label for="showpacman" class="choice pacman">Pacman</label>
+        <label for="showmario" class="choice mario">Mario</label>
+        <label for="showduck" class="choice duck">Duck</label>
+      </div>
+    </div>
+
+    <div class="container container--pacman">
+      <div class="arcade">
+        <div class="wall-l">
+          <div class="block1"></div>
+          <div class="block2"></div>
+        </div>
+        <div class="middle">
+          <div class="block1"></div>
+          <div class="block2">
+            <div class="screen">
+              <div class="game">
+                <div class="pacman">
+                  <div class="pacman__mouth"></div>
+                  <div class="pacman__eye"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block3">
+            <div class="button1"></div>
+            <div class="button2"></div>
+            <div class="stick">
+              <div class="stick__handle">
+                <div class="stick__circle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="block4"></div>
+          <div class="block5"></div>
+          <div class="block6">
+            <div class="face"></div>
+          </div>
+          <div class="block7"></div>
+        </div>
+        <div class="wall-r">
+          <div class="block1"></div>
+          <div class="block2">
+            <div class="fan"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container--mario">
+      <div class="arcade">
+        <div class="wall-l">
+          <div class="block1"></div>
+          <div class="block2"></div>
+        </div>
+        <div class="middle">
+          <div class="block1"></div>
+          <div class="block2">
+            <div class="screen">
+              <div class="game">
+                <img src="assets/img/mario.gif" alt="mario game" />
+              </div>
+            </div>
+          </div>
+          <div class="block3">
+            <div class="button1"></div>
+            <div class="button2"></div>
+            <div class="stick">
+              <div class="stick__handle">
+                <div class="stick__circle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="block4"></div>
+          <div class="block5"></div>
+          <div class="block6">
+            <div class="face"></div>
+          </div>
+          <div class="block7"></div>
+        </div>
+        <div class="wall-r">
+          <div class="block1"></div>
+          <div class="block2">
+            <div class="fan"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container--duck">
+      <div class="arcade">
+        <div class="wall-l">
+          <div class="block1"></div>
+          <div class="block2"></div>
+        </div>
+        <div class="middle">
+          <div class="block1"></div>
+          <div class="block2">
+            <div class="screen">
+              <div class="game">
+                <img src="assets/img/duck.gif" alt="duck hunt game" />
+              </div>
+            </div>
+          </div>
+          <div class="block3">
+            <div class="button1"></div>
+            <div class="button2"></div>
+            <div class="stick">
+              <div class="stick__handle">
+                <div class="stick__circle"></div>
+              </div>
+            </div>
+          </div>
+          <div class="block4"></div>
+          <div class="block5"></div>
+          <div class="block6">
+            <div class="face"></div>
+          </div>
+          <div class="block7"></div>
+        </div>
+        <div class="wall-r">
+          <div class="block1"></div>
+          <div class="block2">
+            <div class="fan"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

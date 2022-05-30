@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  clip-path: circle(0%);
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  z-index: 6 !important;
+  transition: all 0.4s ease-in-out;
+
+  .arcade {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+  }
+
+  &.fadeOut {
+    animation: fadeOut 1s forwards;
+  }
+}

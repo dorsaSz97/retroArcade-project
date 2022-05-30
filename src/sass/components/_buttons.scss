@@ -1,0 +1,38 @@
+@use '../abstracts/' as *;
+
+.choice {
+  position: absolute;
+  // clip-path: none;
+  padding: 2rem 3rem;
+  font-family: inherit;
+  font-size: 2rem;
+  color: $bg-color;
+  background-color: $text-color;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s;
+
+  &.mario {
+    left: 0;
+  }
+  &.pacman {
+    left: 52%;
+    transform: translateX(-50%);
+  }
+  &.duck {
+    left: calc(100% - 140px);
+  }
+
+  &.mario:hover {
+    background-color: #a97ae3;
+    box-shadow: 0 0 15px #c6bad9;
+  }
+  &.pacman:hover {
+    background-color: #5adbfb;
+    box-shadow: 0 0 15px #a7e8ef;
+  }
+  &.duck:hover {
+    background-color: #fff79c;
+    box-shadow: 0 0 15px #fff9ce;
+  }
+}
