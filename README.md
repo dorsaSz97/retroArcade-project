@@ -4,7 +4,7 @@ This is a mini project to practice CSS clip-path and animations.
 
 ## Screenshot
 
-<img src="src/assets/img/sc.webp" width="100%" height="100%"/>
+<img src="src/assets/img/sc.png" width="100%" height="100%"/>
 
 ## Get started
 
